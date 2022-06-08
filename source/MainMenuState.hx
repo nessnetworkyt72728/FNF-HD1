@@ -35,10 +35,11 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
-		'credits',
-		#if !switch 'donate', #end
+		//#if MODS_ALLOWED 'mods', #end
+		//#if ACHIEVEMENTS_ALLOWED 'awards', #end
+		//'credits',
+		'gallery'
+		//#if !switch 'donate', #end
 		'options'
 	];
 
@@ -247,6 +248,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new AchievementsMenuState());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
+									case 'gallery':
+										LoadingState.loadAndSwitchState(new gallery.Gallery());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
 								}
