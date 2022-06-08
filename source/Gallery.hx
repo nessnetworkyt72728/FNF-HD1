@@ -140,7 +140,7 @@ override function create()
 		//if (!isDebug)
 		//if (!StoryMenuState.weekUnlocked[curSelected])
 				suffix = "-locked";
-		else
+		else}
 		suffix = '';
 		weekTexts.forEach(function(weekText:FlxSprite){
 		if (weekText.ID == curSelected)
