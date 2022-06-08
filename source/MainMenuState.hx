@@ -245,7 +245,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new ModsMenuState());
 									#end
 									case 'gallery':
-										LoadingState.loadAndSwitchState(new gallery.Gallery());
+										FlxG.switchState(new Gallery());
+										FlxG.sound.music.fadeOut(1,0);
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
