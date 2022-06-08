@@ -138,7 +138,7 @@ override function create()
 		if (curSelected >= weeks.length)
 			curSelected = 0;
 		//if (!isDebug)
-		if (!StoryMenuState.weekUnlocked[curSelected])
+		//if (!StoryMenuState.weekUnlocked[curSelected])
 				suffix = "-locked";
 		else
 		suffix = '';
